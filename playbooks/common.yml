@@ -1,5 +1,6 @@
 ---
 
+
 - hosts: all
   roles:
-    - { role: common_packages, tags: [ 'common_packages' ] }
+  - { role: common_packages, tags: [ 'common_packages' ] }

@@ -1,10 +1,11 @@
 ---
+- import_tasks: tasks/amzn2.yml
+  when:
+    ansible_distribution == "Amazon" and ansible_distribution_version == '2'
 
-- name: create yum repository file
-  copy:
-    src: etc/yum.repos.d/nginx.repo
-    dest: /etc/yum.repos.d/nginx.repo
-  become: true
+- import_tasks: tasks/centos.yml
+  when:
+    ansible_distribution == "CentOS"
 
 - name: install nginx
   yum:

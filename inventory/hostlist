@@ -32,3 +32,6 @@ logclient1
 sensu1
 sensu2
 sensu3
+
+[web]
+web1

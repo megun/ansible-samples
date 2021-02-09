@@ -7,9 +7,7 @@
 
 - name: install common packages
   yum:
-    name: "{{ item }}"
-    state: installed
-  with_items:
+    name:
     - git
     - dstat
     - tcpdump
@@ -19,5 +17,6 @@
     - tmux
     - policycoreutils-python
     - bind-utils
-    - net-tools
+    - net-tools      
+    state: installed
   become: true

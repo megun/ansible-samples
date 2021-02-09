@@ -1,0 +1,7 @@
+---
+
+- import_playbook: common.yml
+
+- hosts: web
+  roles:
+    - { role: nginx, tags: [ 'nginx' ] }

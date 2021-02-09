@@ -1,0 +1,4 @@
+---
+- name: Enable amzn2extra-nginx1 repository
+  shell: amazon-linux-extras enable nginx1
+  become: true

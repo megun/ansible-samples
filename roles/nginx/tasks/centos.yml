@@ -1,0 +1,6 @@
+---
+- name: create yum repository file
+  copy:
+    src: etc/yum.repos.d/nginx.repo
+    dest: /etc/yum.repos.d/nginx.repo
+  become: true
